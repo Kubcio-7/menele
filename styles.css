@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Rpg-Rp7A';
+    src: url('fonts/Rpg-Rp7A.ttf') format('truetype');
+}
+
+body {
+    background-color: #be9010;
+    color: #333;
+    font-family: 'Rpg-Rp7A', sans-serif;
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(116, 195, 21, 0.2) 0,
+        rgba(255, 255, 255, 0.2) 10px,
+        transparent 10px,
+        transparent 20px
+    );
+    background-size: 200px 200px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 720%;
+    color: #ffffff;
+    text-shadow: 8px 8px #000000;
+    font-family: 'Rpg-Rp7A', sans-serif;
+    font-style: italic;
+    top: -5%;
+    left: 30%;  
+    position: absolute;
+}
+
+p {
+    text-align: center;
+    font-size: 200%;
+    color: #ffffff;
+    text-shadow: 8px 5px #000000;
+    font-family: 'Rpg-Rp7A', sans-serif;
+    font-style: italic;
+    top: 88%;
+    left: 33%;  
+    position: absolute;
+}
+
+.o {
+    text-align: center;
+    font-size: 200%;
+    color: #ffffff;
+    text-shadow: 5px 3px #000000;
+    font-family: 'Rpg-Rp7A', sans-serif;
+    font-style: italic;
+    top: 20%;
+    left: 2%;  
+    position: absolute;
+}
+
+.i {
+    text-align: center;
+    font-size: 200%;
+    color: #ffffff;
+    text-shadow: 5px 3px #000000;
+    font-family: 'Rpg-Rp7A', sans-serif;
+    font-style: italic;
+    top: 25%;
+    left: 2%;  
+    position: absolute;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.button-container {
+    position: absolute;
+    right: 60%;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.5); /* Add transparency */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.w, .e, .r, .t, .y, .u {
+    color: #ffffff;
+    text-shadow: 8px 5px #000000;
+    font-family: 'Rpg-Rp7A', sans-serif;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, text-shadow 0.3s;
+    background-color: transparent;
+    border: none;
+}
+
+.w:hover, .e:hover, .r:hover, .t:hover, .y:hover, .u:hover {
+    background-color: transparent;
+    color: #000000;
+    text-shadow: 2px 3px #ffffff;
+}
+
+.w {
+    top: 40%;
+}
+
+.e {
+    top: 55%;
+}
+
+.r {
+    top: 70%;
+}
+
+.t {
+    top: 75%;
+}
+
+.y {
+    top: 80%;
+}
+
+.u {
+    top: 85%;
+}
+
+.tv {
+    width: 30%;
+    height: 44%;
+    margin: 0 auto;
+    top: 39%;
+    left: 54%;
+    position: absolute;
+}
+
+.gf {
+    width: 40%;
+    height: 75%;
+    margin: 0 auto;
+    top: 17%;
+    left: 50%;
+    position: absolute;
+    z-index: 10; /* Ensure it is in front of .hover-image */
+}
+
+.cn {
+    width: 40%;
+    height: 75%;
+    margin: 0 auto;
+    top: 17%;
+    left: 53%;
+    position: absolute;
+    opacity: 0.5; /* Add transparency */
+}
+
+.hover-image {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 5; /* Ensure it is behind .gf */
+}
+
+.hover-image.s1 {
+    width: 40%;
+    height: 75%;
+    margin: 0 auto;
+    top: 17%;
+    left: 20%;
+    position: absolute;
+    z-index: 5; /* Ensure it is behind .gf */
+}
+
+.hover-image.s2 {
+    width: 40%;
+    height: 75%;
+    margin: 0 auto;
+    top: 17%;
+    left: 20%;
+    position: absolute;
+    z-index: 5; /* Ensure it is behind .gf */
+}
+
+.hover-image.s3 {
+    width: 40%;
+    height: 75%;
+    margin: 0 auto;
+    top: 17%;
+    left: 20%;
+    position: absolute;
+    z-index: 5; /* Ensure it is behind .gf */
+}
+
+.hover-video {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 5; /* Ensure it is behind .gf */
+}
+

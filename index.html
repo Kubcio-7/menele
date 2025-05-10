@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENELE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        .hover-video {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 5; /* Ensure it is behind .gf */
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <h1>TV Menel</h1>
+
+    <div class="vertical-text">
+        <div class="button-container">
+            <button class="w" style="font-size: 30px;" onmouseover="showVideo('vid/kaktus i straz z Wenus.mp4', event, 's1')" onclick="playVideoWithSound('vid/kaktus i straz z Wenus.mp4')">Kaktus z Wenus</button>
+            <button class="e" style="font-size: 30px;" onmouseover="showVideo('vid/mop i wc picker polska.mp4', event, 's2')" onclick="playVideoWithSound('vid/mop i wc picker polska.mp4')">Mop i WC Picker</button>
+            <button class="r" style="font-size: 30px;" onmouseover="showVideo('vid/oczy kobry.mp4', event, 's3')" onclick="playVideoWithSound('vid/oczy kobry.mp4')">Oczy Kobry</button>
+            <button class="t" style="font-size: 30px;" onmouseover="showVideo('vid/orzel i oczy kobry.mp4', event, 's4')" onclick="playVideoWithSound('vid/orzel i oczy kobry.mp4')">Orzel X Oczy Kobry</button>
+            <button class="y" style="font-size: 30px;" onmouseover="showVideo('vid/Zul kloci sie o 7 zl.mp4', event, 's5')" onclick="playVideoWithSound('vid/Zul kloci sie o 7 zl.mp4')">Afera o 7 zl</button>
+            <button class="u" style="font-size: 30px;" onmouseover="showVideo('vid/techno żul.mp4', event, 's5')" onclick="playVideoWithSound('vid/techno żul.mp4')">Techno Zul</button>
+        </div>
+    </div>
+    
+    <div class="content">
+        <img src="images/cien.png" alt="cn" class="cn">
+        <img src="images/tv-static.gif" alt="tv" class="tv">
+        <img src="images/tv.png" alt="gf" class="gf">
+    </div>
+
+    <o class="o"> Filmiki zapozyczone z Menele.TV</o>
+
+    <i class="i"> Norbi is The King !!!</i>
+
+    <p> Pryta to jest dopiero...... MNIAM!!!</p>
+    
+    <video id="hoverVideo" class="hover-video" src="" autoplay muted></video>
+
+</body>
+</html>
